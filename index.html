@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Functionality</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="atm">
+        <h1>Welcom to the ATM</h1>
+
+        <div class="pin-section">
+
+            <input type="password" placeholder="Enter Your Pin" id="user-pin">
+            <button class="sub-btn" onclick="checkPin()">Submit</button>
+            <div>
+                <p class="pin-message"></p>
+            </div>
+        </div>
+
+
+        <div class="menu-section" >
+            <div class="check">
+                <button class="check-blance" onclick="showBlance()">Check Blance</button>
+            </div>
+
+            <div class="deposite">
+                <input type="number" placeholder="Deposite Amount" id="deposite-input">
+                <button class="deposite-btn" onclick="depositeAmount()">Deposite</button>
+            </div>
+
+            <div class="withdraw">
+                <input type="number" placeholder="WithDraw" id="withdraw-input">
+                <button class="withdraw-btn" onclick="withdrawMoney()">Withdraw</button>
+            </div>
+
+            <div class="exit">
+                <button class="exit-atm" onclick="exitAtm()">Exit</button>
+            </div>
+
+            <p id="message"></p>
+        </div>
+
+    </section>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
