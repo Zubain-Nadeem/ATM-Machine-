@@ -229,3 +229,66 @@ background: #457b9d;
     color: #fff;
  }
 /* Menu Section */
+
+@media (max-width: 1024px) {
+    .atm {
+        width: 70%;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .atm {
+        width: 95%;
+        min-width: unset;
+        padding: 8px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    #user-pin, #deposite-input, #withdraw-input {
+        width: 90%;
+        font-size: 16px;
+    }
+    .sub-btn, .deposite-btn, .withdraw-btn, .check-blance, .exit-atm {
+        width: 60%;
+        font-size: 16px;
+        height: 38px;
+    }
+    .menu-section, .pin-section {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .atm {
+        width: 100%;
+        min-width: unset;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 4px;
+    }
+    h1 {
+        font-size: 18px;
+        padding: 2px;
+    }
+    #user-pin, #deposite-input, #withdraw-input {
+        width: 100%;
+        font-size: 14px;
+        height: 34px;
+    }
+    .sub-btn, .deposite-btn, .withdraw-btn, .check-blance, .exit-atm {
+        width: 100%;
+        font-size: 15px;
+        height: 34px;
+        margin-top: 4px;
+    }
+    .menu-section, .pin-section {
+        gap: 8px;
+        padding: 2px;
+    }
+    .pin-message, #message {
+        font-size: 13px;
+        padding: 4px;
+    }
+}
